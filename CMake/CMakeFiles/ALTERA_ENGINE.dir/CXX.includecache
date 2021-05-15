@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sam/CLionProjects/ALTERA-ENGINE/main.cpp
+iostream
+-
+SDL2/SDL.h
+/home/sam/CLionProjects/ALTERA-ENGINE/SDL2/SDL.h
+
