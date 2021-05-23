@@ -67,10 +67,10 @@ RM = /home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sam/CLionProjects/ALTERA-ENGINE
+CMAKE_SOURCE_DIR = /home/sam/CLionProjects/SAM-ENGINE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sam/CLionProjects/ALTERA-ENGINE/CMake
+CMAKE_BINARY_DIR = /home/sam/CLionProjects/SAM-ENGINE/CMake
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles /home/sam/CLionProjects/ALTERA-ENGINE/CMake//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles /home/sam/CLionProjects/SAM-ENGINE/CMake//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,44 +130,125 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ALTERA_ENGINE
+# Target rules for targets named SAM_ENGINE
 
 # Build rule for target.
-ALTERA_ENGINE: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ALTERA_ENGINE
-.PHONY : ALTERA_ENGINE
+SAM_ENGINE: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SAM_ENGINE
+.PHONY : SAM_ENGINE
 
 # fast build rule for target.
-ALTERA_ENGINE/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALTERA_ENGINE.dir/build.make CMakeFiles/ALTERA_ENGINE.dir/build
-.PHONY : ALTERA_ENGINE/fast
+SAM_ENGINE/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/build
+.PHONY : SAM_ENGINE/fast
 
-main.o: main.cpp.o
+Examples/Snake/main.o: Examples/Snake/main.cpp.o
 
-.PHONY : main.o
+.PHONY : Examples/Snake/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALTERA_ENGINE.dir/build.make CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o
-.PHONY : main.cpp.o
+Examples/Snake/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o
+.PHONY : Examples/Snake/main.cpp.o
 
-main.i: main.cpp.i
+Examples/Snake/main.i: Examples/Snake/main.cpp.i
 
-.PHONY : main.i
+.PHONY : Examples/Snake/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALTERA_ENGINE.dir/build.make CMakeFiles/ALTERA_ENGINE.dir/main.cpp.i
-.PHONY : main.cpp.i
+Examples/Snake/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.i
+.PHONY : Examples/Snake/main.cpp.i
 
-main.s: main.cpp.s
+Examples/Snake/main.s: Examples/Snake/main.cpp.s
 
-.PHONY : main.s
+.PHONY : Examples/Snake/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ALTERA_ENGINE.dir/build.make CMakeFiles/ALTERA_ENGINE.dir/main.cpp.s
-.PHONY : main.cpp.s
+Examples/Snake/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.s
+.PHONY : Examples/Snake/main.cpp.s
+
+src/Logger.o: src/Logger.cpp.o
+
+.PHONY : src/Logger.o
+
+# target to build an object file
+src/Logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o
+.PHONY : src/Logger.cpp.o
+
+src/Logger.i: src/Logger.cpp.i
+
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
+src/TextureManager.o: src/TextureManager.cpp.o
+
+.PHONY : src/TextureManager.o
+
+# target to build an object file
+src/TextureManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o
+.PHONY : src/TextureManager.cpp.o
+
+src/TextureManager.i: src/TextureManager.cpp.i
+
+.PHONY : src/TextureManager.i
+
+# target to preprocess a source file
+src/TextureManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.i
+.PHONY : src/TextureManager.cpp.i
+
+src/TextureManager.s: src/TextureManager.cpp.s
+
+.PHONY : src/TextureManager.s
+
+# target to generate assembly for a file
+src/TextureManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.s
+.PHONY : src/TextureManager.cpp.s
+
+src/Window.o: src/Window.cpp.o
+
+.PHONY : src/Window.o
+
+# target to build an object file
+src/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o
+.PHONY : src/Window.cpp.o
+
+src/Window.i: src/Window.cpp.i
+
+.PHONY : src/Window.i
+
+# target to preprocess a source file
+src/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.i
+.PHONY : src/Window.cpp.i
+
+src/Window.s: src/Window.cpp.s
+
+.PHONY : src/Window.s
+
+# target to generate assembly for a file
+src/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.s
+.PHONY : src/Window.cpp.s
 
 # Help Target
 help:
@@ -177,10 +258,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ALTERA_ENGINE"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... SAM_ENGINE"
+	@echo "... Examples/Snake/main.o"
+	@echo "... Examples/Snake/main.i"
+	@echo "... Examples/Snake/main.s"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
+	@echo "... src/TextureManager.o"
+	@echo "... src/TextureManager.i"
+	@echo "... src/TextureManager.s"
+	@echo "... src/Window.o"
+	@echo "... src/Window.i"
+	@echo "... src/Window.s"
 .PHONY : help
 
 

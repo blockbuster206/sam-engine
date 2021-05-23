@@ -17,10 +17,17 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/CMakeLanguageInformation.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/CheckCSourceCompiles.cmake"
+  "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/CheckIncludeFile.cmake"
+  "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/CheckLibraryExists.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Compiler/GNU-C.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Compiler/GNU-CXX.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Compiler/GNU.cmake"
+  "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake"
+  "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/FindPackageMessage.cmake"
+  "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/FindThreads.cmake"
+  "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Internal/CheckSourceCompiles.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Platform/Linux-GNU-C.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Platform/Linux-GNU-CXX.cmake"
   "/home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/share/cmake-3.19/Modules/Platform/Linux-GNU.cmake"
@@ -30,11 +37,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.19.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeSystem.cmake"
+  "Modules/FindSDL2.cmake"
+  "Modules/FindSDL2_IMAGE.cmake"
   "../CMakeLists.txt"
-  "/usr/lib64/cmake/SDL2/SDL2Config.cmake"
-  "/usr/lib64/cmake/SDL2/SDL2ConfigVersion.cmake"
-  "/usr/lib64/cmake/SDL2/SDL2Targets-noconfig.cmake"
-  "/usr/lib64/cmake/SDL2/SDL2Targets.cmake"
   )
 
 # The corresponding makefile is:
@@ -50,5 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ALTERA_ENGINE.dir/DependInfo.cmake"
+  "CMakeFiles/SAM_ENGINE.dir/DependInfo.cmake"
   )

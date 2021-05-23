@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "../Build/ALTERA_ENGINE"
   "../Build/ALTERA_ENGINE.pdb"
-  "CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o"
+  "CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o"
+  "CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o"
+  "CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

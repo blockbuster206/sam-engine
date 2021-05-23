@@ -1,11 +1,11 @@
 //
 // Created by sam on 5/16/21.
 //
+#include "SDL2/SDL.h"
 
 #ifndef ALTERA_ENGINE_WINDOW_H
 #define ALTERA_ENGINE_WINDOW_H
 
-#include "SDL2/SDL.h"
 
 
 class Window {

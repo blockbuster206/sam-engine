@@ -11,6 +11,10 @@ class Logger {
     public:
         static void log(const char* message);
         static void initialize(const char* initMessage);
+
+        static void load(const char* filepath);
+        static void errorLoad(const char* filepath);
+
         static void error(const char* errorMessage);
 };
 

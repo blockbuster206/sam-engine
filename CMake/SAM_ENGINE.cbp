@@ -2,10 +2,10 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="ALTERA_ENGINE"/>
+		<Option title="SAM_ENGINE"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\SDL2\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/sam/CLionProjects/SAM-ENGINE/CMake"/>
@@ -37,14 +37,15 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ALTERA_ENGINE">
-				<Option output="/home/sam/CLionProjects/SAM-ENGINE/Build/ALTERA_ENGINE" prefix_auto="0" extension_auto="0"/>
+			<Target title="SAM_ENGINE">
+				<Option output="/home/sam/CLionProjects/SAM-ENGINE/Build/SAM_ENGINE" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/sam/CLionProjects/SAM-ENGINE/Build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/sam/CLionProjects/SAM-ENGINE/Headers"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/sam/CLionProjects/SAM-ENGINE/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
@@ -54,20 +55,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 ALTERA_ENGINE"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 SAM_ENGINE"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ALTERA_ENGINE/fast">
-				<Option output="/home/sam/CLionProjects/SAM-ENGINE/Build/ALTERA_ENGINE" prefix_auto="0" extension_auto="0"/>
+			<Target title="SAM_ENGINE/fast">
+				<Option output="/home/sam/CLionProjects/SAM-ENGINE/Build/SAM_ENGINE" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/sam/CLionProjects/SAM-ENGINE/Build"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/sam/CLionProjects/SAM-ENGINE/Headers"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/sam/CLionProjects/SAM-ENGINE/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
 					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
@@ -77,42 +79,42 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 ALTERA_ENGINE/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 SAM_ENGINE/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/sam/CLionProjects/SAM-ENGINE/CMake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Headers/Logger.h">
-			<Option target="ALTERA_ENGINE"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp">
+			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Headers/Window.h">
-			<Option target="ALTERA_ENGINE"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Logger.h">
+			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Logger.cpp">
-			<Option target="ALTERA_ENGINE"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/TextureManager.h">
+			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.cpp">
-			<Option target="ALTERA_ENGINE"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Window.h">
+			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Source/main.cpp">
-			<Option target="ALTERA_ENGINE"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/src/Logger.cpp">
+			<Option target="SAM_ENGINE"/>
+		</Unit>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.cpp">
+			<Option target="SAM_ENGINE"/>
+		</Unit>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/src/Window.cpp">
+			<Option target="SAM_ENGINE"/>
 		</Unit>
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/../../../../usr/lib64/cmake/SDL2/SDL2Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SDL2\"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMake/Modules/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\CMake\Modules\"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/../../../../usr/lib64/cmake/SDL2/SDL2ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/../../../../usr/lib64/cmake/SDL2/SDL2Targets-noconfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/../../../../usr/lib64/cmake/SDL2/SDL2Targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SDL2\"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMake/Modules/FindSDL2_IMAGE.cmake">
+			<Option virtualFolder="CMake Files\CMake\Modules\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

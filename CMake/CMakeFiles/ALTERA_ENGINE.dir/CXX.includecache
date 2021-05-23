@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/sam/CLionProjects/ALTERA-ENGINE/main.cpp
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Logger.cpp
+Logger.h
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Logger.h
+
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Logger.h
+
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.cpp
+Window.h
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.h
+
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.h
+SDL2/SDL.h
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/SDL2/SDL.h
+
+/home/sam/CLionProjects/SAM-ENGINE/Source/main.cpp
 iostream
 -
-SDL2/SDL.h
-/home/sam/CLionProjects/ALTERA-ENGINE/SDL2/SDL.h
+Engine/Window.h
+/home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.h
 

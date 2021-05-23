@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/TextureManager.h
+SDL2/SDL.h
+../include/SDL2/SDL.h
+vector
+../include/vector
+iostream
+../include/iostream
+
+../include/Window.h
+SDL2/SDL.h
+../include/SDL2/SDL.h
+
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp
+iostream
+-
+Window.h
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/Window.h
+TextureManager.h
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/TextureManager.h
+

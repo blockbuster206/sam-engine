@@ -1,3 +1,3 @@
-/home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles/rebuild_cache.dir
-/home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles/edit_cache.dir
-/home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles/ALTERA_ENGINE.dir
+/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/rebuild_cache.dir
+/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/edit_cache.dir
+/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/SAM_ENGINE.dir

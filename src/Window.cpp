@@ -4,12 +4,19 @@
 
 #include "Window.h"
 #include "Logger.h"
+#include "SDL2/SDL.h"
+#include "SDL2/SDL_image.h"
 
 SDL_Renderer* Window::renderer = nullptr;
 
 Window::Window() {
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
         Logger::initialize("SubSystems");
+        if (IMG_Init(IMG_INIT_PNG )) {
+            Logger::initialize("Image");
+        } else {
+            Logger::error("Failed to Initialize Image");
+        }
     } else {
         Logger::error("Failed to Initialize SubSystems");
     }

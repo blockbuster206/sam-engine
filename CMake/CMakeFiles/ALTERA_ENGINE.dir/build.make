@@ -62,10 +62,10 @@ RM = /home/sam/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sam/CLionProjects/ALTERA-ENGINE
+CMAKE_SOURCE_DIR = /home/sam/CLionProjects/SAM-ENGINE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sam/CLionProjects/ALTERA-ENGINE/CMake
+CMAKE_BINARY_DIR = /home/sam/CLionProjects/SAM-ENGINE/CMake
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ALTERA_ENGINE.dir/depend.make
@@ -76,30 +76,60 @@ include CMakeFiles/ALTERA_ENGINE.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ALTERA_ENGINE.dir/flags.make
 
-CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o: CMakeFiles/ALTERA_ENGINE.dir/flags.make
-CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o -c /home/sam/CLionProjects/ALTERA-ENGINE/main.cpp
+CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o: CMakeFiles/ALTERA_ENGINE.dir/flags.make
+CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o: ../Source/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/Source/main.cpp
 
-CMakeFiles/ALTERA_ENGINE.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ALTERA_ENGINE.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/ALTERA-ENGINE/main.cpp > CMakeFiles/ALTERA_ENGINE.dir/main.cpp.i
+CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/Source/main.cpp > CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.i
 
-CMakeFiles/ALTERA_ENGINE.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ALTERA_ENGINE.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/ALTERA-ENGINE/main.cpp -o CMakeFiles/ALTERA_ENGINE.dir/main.cpp.s
+CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/Source/main.cpp -o CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.s
+
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o: CMakeFiles/ALTERA_ENGINE.dir/flags.make
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o: ../Source/Engine/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.cpp
+
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.cpp > CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.i
+
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Window.cpp -o CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.s
+
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o: CMakeFiles/ALTERA_ENGINE.dir/flags.make
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o: ../Source/Engine/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Logger.cpp
+
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Logger.cpp > CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.i
+
+CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/Source/Engine/Logger.cpp -o CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.s
 
 # Object files for target ALTERA_ENGINE
 ALTERA_ENGINE_OBJECTS = \
-"CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o"
+"CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o" \
+"CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o" \
+"CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o"
 
 # External object files for target ALTERA_ENGINE
 ALTERA_ENGINE_EXTERNAL_OBJECTS =
 
-../Build/ALTERA_ENGINE: CMakeFiles/ALTERA_ENGINE.dir/main.cpp.o
+../Build/ALTERA_ENGINE: CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o
+../Build/ALTERA_ENGINE: CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o
+../Build/ALTERA_ENGINE: CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o
 ../Build/ALTERA_ENGINE: CMakeFiles/ALTERA_ENGINE.dir/build.make
 ../Build/ALTERA_ENGINE: CMakeFiles/ALTERA_ENGINE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../Build/ALTERA_ENGINE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../Build/ALTERA_ENGINE"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ALTERA_ENGINE.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +142,6 @@ CMakeFiles/ALTERA_ENGINE.dir/clean:
 .PHONY : CMakeFiles/ALTERA_ENGINE.dir/clean
 
 CMakeFiles/ALTERA_ENGINE.dir/depend:
-	cd /home/sam/CLionProjects/ALTERA-ENGINE/CMake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sam/CLionProjects/ALTERA-ENGINE /home/sam/CLionProjects/ALTERA-ENGINE /home/sam/CLionProjects/ALTERA-ENGINE/CMake /home/sam/CLionProjects/ALTERA-ENGINE/CMake /home/sam/CLionProjects/ALTERA-ENGINE/CMake/CMakeFiles/ALTERA_ENGINE.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sam/CLionProjects/SAM-ENGINE/CMake && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sam/CLionProjects/SAM-ENGINE /home/sam/CLionProjects/SAM-ENGINE /home/sam/CLionProjects/SAM-ENGINE/CMake /home/sam/CLionProjects/SAM-ENGINE/CMake /home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/ALTERA_ENGINE.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ALTERA_ENGINE.dir/depend
 
