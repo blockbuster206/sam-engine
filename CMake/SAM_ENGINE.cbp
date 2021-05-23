@@ -5,7 +5,7 @@
 		<Option title="SAM_ENGINE"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\CMake\Modules\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/sam/CLionProjects/SAM-ENGINE/CMake"/>
@@ -86,7 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp">
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Logger.h">
@@ -110,11 +110,11 @@
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMake/Modules/FindSDL2.cmake">
-			<Option virtualFolder="CMake Files\CMake\Modules\"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Modules/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\Modules\"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMake/Modules/FindSDL2_IMAGE.cmake">
-			<Option virtualFolder="CMake Files\CMake\Modules\"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Modules/FindSDL2_IMAGE.cmake">
+			<Option virtualFolder="CMake Files\Modules\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

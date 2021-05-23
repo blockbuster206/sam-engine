@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../include/Logger.h
+
 ../include/TextureManager.h
 SDL2/SDL.h
 ../include/SDL2/SDL.h
@@ -18,11 +20,23 @@ iostream
 SDL2/SDL.h
 ../include/SDL2/SDL.h
 
-/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp
 iostream
 -
 Window.h
-/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/Window.h
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/Window.h
 TextureManager.h
-/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/TextureManager.h
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/TextureManager.h
+
+/home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.cpp
+TextureManager.h
+/home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.h
+Logger.h
+/home/sam/CLionProjects/SAM-ENGINE/src/Logger.h
+Window.h
+/home/sam/CLionProjects/SAM-ENGINE/src/Window.h
+SDL2/SDL.h
+/home/sam/CLionProjects/SAM-ENGINE/src/SDL2/SDL.h
+SDL2/SDL_image.h
+/home/sam/CLionProjects/SAM-ENGINE/src/SDL2/SDL_image.h
 

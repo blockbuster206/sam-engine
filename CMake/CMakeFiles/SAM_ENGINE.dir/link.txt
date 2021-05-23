@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o -o ../Build/SAM_ENGINE  -lSDL2main -lSDL2 -lSDL2_image 
+/usr/bin/c++ -g CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o -o ../Build/SAM_ENGINE  -lSDL2main -lSDL2 -lSDL2_image 

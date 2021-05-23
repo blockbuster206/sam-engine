@@ -3,7 +3,7 @@ project(SAM_ENGINE)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/Build)
-set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/CMake/Modules)
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/Modules)
 
 set(SOURCES "Examples/Snake/src/main.cpp" "src/Window.cpp" "include/Window.h" "src/Logger.cpp" "include/Logger.h" src/TextureManager.cpp include/TextureManager.h)
 

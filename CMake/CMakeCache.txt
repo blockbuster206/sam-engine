@@ -244,6 +244,9 @@ SDL2MAIN_LIBRARY:FILEPATH=/usr/lib/libSDL2main.a
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/lib64/cmake/SDL2
 
+//The directory containing a CMake configuration file for SDL2_IMAGE.
+SDL2_IMAGE_DIR:PATH=SDL2_IMAGE_DIR-NOTFOUND
+
 //Path to a file.
 SDL2_IMAGE_INCLUDE_DIR:PATH=/usr/include/SDL2
 
@@ -434,5 +437,5 @@ ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 SDL2_IMAGE_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDL2_image.so
-SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread
+SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
 

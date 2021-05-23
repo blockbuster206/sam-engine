@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp" "/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o"
+  "/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp" "/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o"
   "/home/sam/CLionProjects/SAM-ENGINE/src/Logger.cpp" "/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o"
   "/home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.cpp" "/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o"
   "/home/sam/CLionProjects/SAM-ENGINE/src/Window.cpp" "/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o"
