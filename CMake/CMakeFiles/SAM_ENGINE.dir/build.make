@@ -89,62 +89,77 @@ CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp -o CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s
 
-CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
-CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o: ../src/Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/src/Window.cpp
+CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
+CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o: ../source/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/source/Window.cpp
 
-CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/src/Window.cpp > CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.i
+CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/source/Window.cpp > CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.i
 
-CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/src/Window.cpp -o CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.s
+CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/source/Window.cpp -o CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.s
 
-CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
-CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o: ../src/Logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/src/Logger.cpp
+CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
+CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o: ../source/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/source/Logger.cpp
 
-CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/src/Logger.cpp > CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.i
+CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/source/Logger.cpp > CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.i
 
-CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/src/Logger.cpp -o CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.s
+CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/source/Logger.cpp -o CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.s
 
-CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
-CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o: ../src/TextureManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.cpp
+CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
+CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o: ../source/Managers/TextureManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/source/Managers/TextureManager.cpp
 
-CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.cpp > CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.i
+CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/source/Managers/TextureManager.cpp > CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.i
 
-CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.cpp -o CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.s
+CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/source/Managers/TextureManager.cpp -o CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.s
+
+CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
+CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o: ../source/Managers/EventManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/source/Managers/EventManager.cpp
+
+CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/source/Managers/EventManager.cpp > CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.i
+
+CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/source/Managers/EventManager.cpp -o CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.s
 
 # Object files for target SAM_ENGINE
 SAM_ENGINE_OBJECTS = \
 "CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o" \
-"CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o" \
-"CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o" \
-"CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o"
+"CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o" \
+"CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o" \
+"CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o" \
+"CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o"
 
 # External object files for target SAM_ENGINE
 SAM_ENGINE_EXTERNAL_OBJECTS =
 
 ../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o
-../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o
-../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o
-../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o
+../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o
+../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o
+../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o
+../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o
 ../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/build.make
 ../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../Build/SAM_ENGINE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../Build/SAM_ENGINE"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SAM_ENGINE.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

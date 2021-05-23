@@ -169,86 +169,113 @@ Examples/Snake/src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s
 .PHONY : Examples/Snake/src/main.cpp.s
 
-src/Logger.o: src/Logger.cpp.o
+source/Logger.o: source/Logger.cpp.o
 
-.PHONY : src/Logger.o
-
-# target to build an object file
-src/Logger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.o
-.PHONY : src/Logger.cpp.o
-
-src/Logger.i: src/Logger.cpp.i
-
-.PHONY : src/Logger.i
-
-# target to preprocess a source file
-src/Logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.i
-.PHONY : src/Logger.cpp.i
-
-src/Logger.s: src/Logger.cpp.s
-
-.PHONY : src/Logger.s
-
-# target to generate assembly for a file
-src/Logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Logger.cpp.s
-.PHONY : src/Logger.cpp.s
-
-src/TextureManager.o: src/TextureManager.cpp.o
-
-.PHONY : src/TextureManager.o
+.PHONY : source/Logger.o
 
 # target to build an object file
-src/TextureManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.o
-.PHONY : src/TextureManager.cpp.o
+source/Logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o
+.PHONY : source/Logger.cpp.o
 
-src/TextureManager.i: src/TextureManager.cpp.i
+source/Logger.i: source/Logger.cpp.i
 
-.PHONY : src/TextureManager.i
+.PHONY : source/Logger.i
 
 # target to preprocess a source file
-src/TextureManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.i
-.PHONY : src/TextureManager.cpp.i
+source/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.i
+.PHONY : source/Logger.cpp.i
 
-src/TextureManager.s: src/TextureManager.cpp.s
+source/Logger.s: source/Logger.cpp.s
 
-.PHONY : src/TextureManager.s
+.PHONY : source/Logger.s
 
 # target to generate assembly for a file
-src/TextureManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/TextureManager.cpp.s
-.PHONY : src/TextureManager.cpp.s
+source/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.s
+.PHONY : source/Logger.cpp.s
 
-src/Window.o: src/Window.cpp.o
+source/Managers/EventManager.o: source/Managers/EventManager.cpp.o
 
-.PHONY : src/Window.o
+.PHONY : source/Managers/EventManager.o
 
 # target to build an object file
-src/Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.o
-.PHONY : src/Window.cpp.o
+source/Managers/EventManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o
+.PHONY : source/Managers/EventManager.cpp.o
 
-src/Window.i: src/Window.cpp.i
+source/Managers/EventManager.i: source/Managers/EventManager.cpp.i
 
-.PHONY : src/Window.i
+.PHONY : source/Managers/EventManager.i
 
 # target to preprocess a source file
-src/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.i
-.PHONY : src/Window.cpp.i
+source/Managers/EventManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.i
+.PHONY : source/Managers/EventManager.cpp.i
 
-src/Window.s: src/Window.cpp.s
+source/Managers/EventManager.s: source/Managers/EventManager.cpp.s
 
-.PHONY : src/Window.s
+.PHONY : source/Managers/EventManager.s
 
 # target to generate assembly for a file
-src/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/src/Window.cpp.s
-.PHONY : src/Window.cpp.s
+source/Managers/EventManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.s
+.PHONY : source/Managers/EventManager.cpp.s
+
+source/Managers/TextureManager.o: source/Managers/TextureManager.cpp.o
+
+.PHONY : source/Managers/TextureManager.o
+
+# target to build an object file
+source/Managers/TextureManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o
+.PHONY : source/Managers/TextureManager.cpp.o
+
+source/Managers/TextureManager.i: source/Managers/TextureManager.cpp.i
+
+.PHONY : source/Managers/TextureManager.i
+
+# target to preprocess a source file
+source/Managers/TextureManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.i
+.PHONY : source/Managers/TextureManager.cpp.i
+
+source/Managers/TextureManager.s: source/Managers/TextureManager.cpp.s
+
+.PHONY : source/Managers/TextureManager.s
+
+# target to generate assembly for a file
+source/Managers/TextureManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.s
+.PHONY : source/Managers/TextureManager.cpp.s
+
+source/Window.o: source/Window.cpp.o
+
+.PHONY : source/Window.o
+
+# target to build an object file
+source/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o
+.PHONY : source/Window.cpp.o
+
+source/Window.i: source/Window.cpp.i
+
+.PHONY : source/Window.i
+
+# target to preprocess a source file
+source/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.i
+.PHONY : source/Window.cpp.i
+
+source/Window.s: source/Window.cpp.s
+
+.PHONY : source/Window.s
+
+# target to generate assembly for a file
+source/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.s
+.PHONY : source/Window.cpp.s
 
 # Help Target
 help:
@@ -262,15 +289,18 @@ help:
 	@echo "... Examples/Snake/src/main.o"
 	@echo "... Examples/Snake/src/main.i"
 	@echo "... Examples/Snake/src/main.s"
-	@echo "... src/Logger.o"
-	@echo "... src/Logger.i"
-	@echo "... src/Logger.s"
-	@echo "... src/TextureManager.o"
-	@echo "... src/TextureManager.i"
-	@echo "... src/TextureManager.s"
-	@echo "... src/Window.o"
-	@echo "... src/Window.i"
-	@echo "... src/Window.s"
+	@echo "... source/Logger.o"
+	@echo "... source/Logger.i"
+	@echo "... source/Logger.s"
+	@echo "... source/Managers/EventManager.o"
+	@echo "... source/Managers/EventManager.i"
+	@echo "... source/Managers/EventManager.s"
+	@echo "... source/Managers/TextureManager.o"
+	@echo "... source/Managers/TextureManager.i"
+	@echo "... source/Managers/TextureManager.s"
+	@echo "... source/Window.o"
+	@echo "... source/Window.i"
+	@echo "... source/Window.s"
 .PHONY : help
 
 

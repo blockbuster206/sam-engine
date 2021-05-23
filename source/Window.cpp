@@ -8,17 +8,18 @@
 #include "SDL2/SDL_image.h"
 
 SDL_Renderer* Window::renderer = nullptr;
+bool Window::running;
 
 Window::Window() {
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
-        Logger::initialize("SubSystems");
+        Logger::initialize("Subsystems");
         if (IMG_Init(IMG_INIT_PNG )) {
             Logger::initialize("Image");
         } else {
             Logger::error("Failed to Initialize Image");
         }
     } else {
-        Logger::error("Failed to Initialize SubSystems");
+        Logger::error("Failed to Initialize Subsystems");
     }
     // initialize the variables so errors dont happen
     window = nullptr;
@@ -43,18 +44,15 @@ void Window::createWindow(const char* title, int xPos, int yPos, int width, int 
         Logger::error("Failed to Initialize Window");
     }
 }
-void Window::doPollUpdates() {
-    while (SDL_PollEvent(&event)) {
-        switch(event.type) {
-            case SDL_QUIT:
-                running = false;
-                break;
-        }
-    }
-}
-void Window::render() {
+
+
+
+void Window::clear() {
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);
+}
+
+void Window::render() {
     SDL_RenderPresent(renderer);
 }
 

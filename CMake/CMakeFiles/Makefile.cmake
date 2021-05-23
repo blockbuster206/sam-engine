@@ -38,8 +38,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.19.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.19.2/CMakeSystem.cmake"
   "../CMakeLists.txt"
-  "../Modules/FindSDL2.cmake"
-  "../Modules/FindSDL2_IMAGE.cmake"
+  "../CMakeModules/FindSDL2.cmake"
+  "../CMakeModules/FindSDL2_IMAGE.cmake"
   )
 
 # The corresponding makefile is:

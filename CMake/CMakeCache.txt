@@ -437,5 +437,5 @@ ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 SDL2_IMAGE_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDL2_image.so
-SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
+SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2main.a;/usr/lib/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
 

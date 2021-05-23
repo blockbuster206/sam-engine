@@ -1,7 +1,7 @@
 //
 // Created by sam on 5/16/21.
 //
-#include "SDL2/SDL.h"
+#include "SDL.h"
 
 #ifndef ALTERA_ENGINE_WINDOW_H
 #define ALTERA_ENGINE_WINDOW_H
@@ -13,20 +13,16 @@ class Window {
         Window();
 
         void createWindow(const char* title, int xPos, int yPos, int width, int height, bool fullscreen);
-        void doPollUpdates();
+        void clear();
         void render();
-
-        bool isRunning() {return running;}
 
         ~Window();
 
         static SDL_Renderer* renderer;
+        static bool running;
 
     private:
         SDL_Window* window;
-        SDL_Event event;
-
-        bool running;
 
 };
 

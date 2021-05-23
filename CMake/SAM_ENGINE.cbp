@@ -5,7 +5,7 @@
 		<Option title="SAM_ENGINE"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Modules\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CMakeModules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/sam/CLionProjects/SAM-ENGINE/CMake"/>
@@ -86,35 +86,44 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/Events.h">
+			<Option target="SAM_ENGINE"/>
+		</Unit>
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Logger.h">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/TextureManager.h">
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Managers/EventManager.h">
+			<Option target="SAM_ENGINE"/>
+		</Unit>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Managers/TextureManager.h">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Window.h">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/src/Logger.cpp">
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/source/Logger.cpp">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/src/TextureManager.cpp">
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/source/Managers/EventManager.cpp">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/src/Window.cpp">
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/source/Managers/TextureManager.cpp">
+			<Option target="SAM_ENGINE"/>
+		</Unit>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/source/Window.cpp">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Modules/FindSDL2.cmake">
-			<Option virtualFolder="CMake Files\Modules\"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMakeModules/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\CMakeModules\"/>
 		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Modules/FindSDL2_IMAGE.cmake">
-			<Option virtualFolder="CMake Files\Modules\"/>
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/CMakeModules/FindSDL2_IMAGE.cmake">
+			<Option virtualFolder="CMake Files\CMakeModules\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
