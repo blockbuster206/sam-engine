@@ -10,7 +10,7 @@
 #include "SDL2/SDL_image.h"
 
 
-Texture* TextureManager::load(const char* filepath, int w, int h) {
+Texture* TextureManager::createTexture(const char* filepath, int w, int h) {
     Texture* texture = new Texture();
     SDL_Surface* tempSurface;
     tempSurface = IMG_Load(filepath);
@@ -18,19 +18,19 @@ Texture* TextureManager::load(const char* filepath, int w, int h) {
         texture->texture = SDL_CreateTextureFromSurface(Window::renderer, tempSurface);
         SDL_FreeSurface(tempSurface);
         if (texture->texture) {
-            Logger::load(filepath);
+            Logger::texture(filepath);
 
             texture->transformDetails.w = w;
             texture->transformDetails.h = h;
             return texture;
         } else {
-            Logger::errorLoad(filepath);
+            Logger::errorTexture(filepath);
         }
     } else {
-        Logger::errorLoad(filepath);
+        Logger::errorTexture(filepath);
     }
 }
 
-void TextureManager::draw(Texture* texture) {
+void TextureManager::drawTexture(Texture* texture) {
     SDL_RenderCopy(Window::renderer, texture->texture, NULL, &texture->transformDetails);
 }

@@ -14,12 +14,25 @@ void Logger::initialize(const char* initMessage) {
     std::cout << "Initialized: " << initMessage << std::endl;
 }
 
-void Logger::load(const char *filepath) {
+void Logger::texture(const char *filepath) {
     std::cout << "Loaded: " << filepath << std::endl;
 }
 
-void Logger::errorLoad(const char *filepath) {
-    std::cout << "UH OH: Couldn't load " << filepath << "!" << std::endl;
+void Logger::errorTexture(const char *filepath) {
+    std::cout << "UH OH: Couldn't texture " << filepath << "!" << std::endl;
+}
+
+void Logger::attribute(Uint32 flag, bool enabled) {
+    if(enabled) {
+        std::cout << "Attribute: Enabled " << flag << std::endl;
+    } else {
+        std::cout << "Attribute: Disabled " << flag << std::endl;
+    }
+
+}
+
+void Logger::errorAttribute(Uint32 flag) {
+    std::cout << "UH OH: ALready enabled " << flag << "!" << std::endl;
 }
 
 void Logger::error(const char* errorMessage) {

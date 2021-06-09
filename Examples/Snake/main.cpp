@@ -7,11 +7,15 @@ Window* window;
 
 EventManager eventManager;
 
+void event() {
+    printf("hi");
+}
+
 int main() {
     window = new Window();
 
-    window->createWindow("Snake", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 500, 500, false);
-    Texture* lol = TextureManager::load("assets/lol.png", 100, 100);
+    window->createWindow("Snake", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800);
+    Texture* lol = TextureManager::createTexture("assets/lol.png", 100, 100);
 
     lol->transformDetails.x = 0;
     lol->transformDetails.y = 0;
@@ -28,7 +32,7 @@ int main() {
         lol->transformDetails.x = x - lol->transformDetails.w/2;
         lol->transformDetails.y = y - lol->transformDetails.h/2;
 
-        TextureManager::draw(lol);
+        TextureManager::drawTexture(lol);
 
         window->render();
     }

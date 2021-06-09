@@ -86,10 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/Events.h">
-			<Option target="SAM_ENGINE"/>
-		</Unit>
-		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp">
+		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp">
 			<Option target="SAM_ENGINE"/>
 		</Unit>
 		<Unit filename="/home/sam/CLionProjects/SAM-ENGINE/include/Logger.h">

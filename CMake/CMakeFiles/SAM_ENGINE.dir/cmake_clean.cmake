@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "../Build/SAM_ENGINE"
   "../Build/SAM_ENGINE.pdb"
-  "CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o"
+  "CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o"
   "CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o"
   "CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.o"
   "CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o"

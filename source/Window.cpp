@@ -25,7 +25,7 @@ Window::Window() {
     window = nullptr;
 }
 
-void Window::createWindow(const char* title, int xPos, int yPos, int width, int height, bool fullscreen) {
+void Window::createWindow(const char* title, int xPos, int yPos, int width, int height) {
     window = SDL_CreateWindow(title, xPos, yPos, width, height, 0);
     if (window) {
         Logger::initialize("Window");
@@ -54,6 +54,32 @@ void Window::clear() {
 
 void Window::render() {
     SDL_RenderPresent(renderer);
+}
+
+void Window::setAttribute(Uint32 flag, bool enabled) {
+    Uint32 windowFlags = SDL_GetWindowFlags(window);
+    Uint32 availableFlags = SDL_WINDOW_FULLSCREEN;
+    if(availableFlags & flag) {
+        if(windowFlags & flag) {
+            if(enabled) {
+                Logger::errorAttribute(flag);
+            } else {
+                // this switch disables the attributes
+                switch(flag) {
+                    case SDL_WINDOW_FULLSCREEN:
+                        SDL_SetWindowFullscreen(window, 0);
+                        Logger::attribute(flag, false);
+                }
+            }
+        } else {
+            // this switch enabled the attributes
+            switch(flag) {
+                case SDL_WINDOW_FULLSCREEN:
+                    SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
+                    Logger::attribute(flag, true);
+            }
+        }
+    }
 }
 
 Window::~Window() {

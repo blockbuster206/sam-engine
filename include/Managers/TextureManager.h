@@ -14,8 +14,8 @@ struct Texture {
 
 class TextureManager {
     public:
-        static Texture* load(const char* filepath, int width, int height);
-        static void draw(Texture* texture);
+        static Texture* createTexture(const char* filepath, int width, int height);
+        static void drawTexture(Texture* texture);
 };
 
 

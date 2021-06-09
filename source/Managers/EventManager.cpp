@@ -17,3 +17,8 @@ void EventManager::doEvents() {
         }
     }
 }
+/*
+ * void EventManager::addCustomEvent<typename >() {
+
+ * }
+ */

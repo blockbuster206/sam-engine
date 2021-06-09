@@ -142,32 +142,32 @@ SAM_ENGINE/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/build
 .PHONY : SAM_ENGINE/fast
 
-Examples/Snake/src/main.o: Examples/Snake/src/main.cpp.o
+Examples/Snake/main.o: Examples/Snake/main.cpp.o
 
-.PHONY : Examples/Snake/src/main.o
+.PHONY : Examples/Snake/main.o
 
 # target to build an object file
-Examples/Snake/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o
-.PHONY : Examples/Snake/src/main.cpp.o
+Examples/Snake/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o
+.PHONY : Examples/Snake/main.cpp.o
 
-Examples/Snake/src/main.i: Examples/Snake/src/main.cpp.i
+Examples/Snake/main.i: Examples/Snake/main.cpp.i
 
-.PHONY : Examples/Snake/src/main.i
+.PHONY : Examples/Snake/main.i
 
 # target to preprocess a source file
-Examples/Snake/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.i
-.PHONY : Examples/Snake/src/main.cpp.i
+Examples/Snake/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.i
+.PHONY : Examples/Snake/main.cpp.i
 
-Examples/Snake/src/main.s: Examples/Snake/src/main.cpp.s
+Examples/Snake/main.s: Examples/Snake/main.cpp.s
 
-.PHONY : Examples/Snake/src/main.s
+.PHONY : Examples/Snake/main.s
 
 # target to generate assembly for a file
-Examples/Snake/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s
-.PHONY : Examples/Snake/src/main.cpp.s
+Examples/Snake/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAM_ENGINE.dir/build.make CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.s
+.PHONY : Examples/Snake/main.cpp.s
 
 source/Logger.o: source/Logger.cpp.o
 
@@ -286,9 +286,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SAM_ENGINE"
-	@echo "... Examples/Snake/src/main.o"
-	@echo "... Examples/Snake/src/main.i"
-	@echo "... Examples/Snake/src/main.s"
+	@echo "... Examples/Snake/main.o"
+	@echo "... Examples/Snake/main.i"
+	@echo "... Examples/Snake/main.s"
 	@echo "... source/Logger.o"
 	@echo "... source/Logger.i"
 	@echo "... source/Logger.s"

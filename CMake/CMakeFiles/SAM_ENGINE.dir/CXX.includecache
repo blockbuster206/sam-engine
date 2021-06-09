@@ -9,6 +9,10 @@
 ../include/Managers/EventManager.h
 SDL.h
 ../include/Managers/SDL.h
+vector
+../include/Managers/vector
+iostream
+../include/Managers/iostream
 
 ../include/Managers/TextureManager.h
 SDL2/SDL.h
@@ -18,15 +22,23 @@ SDL2/SDL.h
 SDL.h
 ../include/SDL.h
 
-/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp
 iostream
 -
 Window.h
-/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/Window.h
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/Window.h
 Managers/TextureManager.h
-/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/Managers/TextureManager.h
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/Managers/TextureManager.h
 Managers/EventManager.h
-/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/Managers/EventManager.h
+/home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/Managers/EventManager.h
+
+/home/sam/CLionProjects/SAM-ENGINE/source/Managers/EventManager.cpp
+Managers/EventManager.h
+/home/sam/CLionProjects/SAM-ENGINE/source/Managers/Managers/EventManager.h
+Window.h
+/home/sam/CLionProjects/SAM-ENGINE/source/Managers/Window.h
+SDL.h
+/home/sam/CLionProjects/SAM-ENGINE/source/Managers/SDL.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

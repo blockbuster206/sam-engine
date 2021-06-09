@@ -76,18 +76,18 @@ include CMakeFiles/SAM_ENGINE.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SAM_ENGINE.dir/flags.make
 
-CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
-CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o: ../Examples/Snake/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp
+CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
+CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o: ../Examples/Snake/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o -c /home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp
 
-CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp > CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.i
+CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp > CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.i
 
-CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/src/main.cpp -o CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.s
+CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/CLionProjects/SAM-ENGINE/Examples/Snake/main.cpp -o CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.s
 
 CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o: CMakeFiles/SAM_ENGINE.dir/flags.make
 CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o: ../source/Window.cpp
@@ -143,7 +143,7 @@ CMakeFiles/SAM_ENGINE.dir/source/Managers/EventManager.cpp.s: cmake_force
 
 # Object files for target SAM_ENGINE
 SAM_ENGINE_OBJECTS = \
-"CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o" \
+"CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o" \
 "CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o" \
 "CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o" \
 "CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o" \
@@ -152,7 +152,7 @@ SAM_ENGINE_OBJECTS = \
 # External object files for target SAM_ENGINE
 SAM_ENGINE_EXTERNAL_OBJECTS =
 
-../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/Examples/Snake/src/main.cpp.o
+../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/Examples/Snake/main.cpp.o
 ../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/source/Window.cpp.o
 ../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/source/Logger.cpp.o
 ../Build/SAM_ENGINE: CMakeFiles/SAM_ENGINE.dir/source/Managers/TextureManager.cpp.o
