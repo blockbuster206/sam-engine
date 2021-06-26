@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/ALTERA_ENGINE.dir/Source/main.cpp.o CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Window.cpp.o CMakeFiles/ALTERA_ENGINE.dir/Source/Engine/Logger.cpp.o -o ../Build/ALTERA_ENGINE  -lSDL2main -lSDL2 

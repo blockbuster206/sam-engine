@@ -1,3 +1,0 @@
-/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/rebuild_cache.dir
-/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/edit_cache.dir
-/home/sam/CLionProjects/SAM-ENGINE/CMake/CMakeFiles/SAM_ENGINE.dir
