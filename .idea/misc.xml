@@ -10,7 +10,7 @@
     </sourceRoots>
     <excludeRoots>
       <file path="$PROJECT_DIR$/Build" />
-      <file path="$PROJECT_DIR$/CMakeModules" />
+      <file path="$PROJECT_DIR$/cmake-modules" />
     </excludeRoots>
   </component>
 </project>
