@@ -25,8 +25,8 @@ Window::Window() {
     window = nullptr;
 }
 
-void Window::createWindow(const char* title, int xPos, int yPos, int width, int height) {
-    window = SDL_CreateWindow(title, xPos, yPos, width, height, 0);
+void Window::createWindow(const char* title, int width, int height) {
+    window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, 0);
     if (window) {
         Logger::initialize("Window");
 
@@ -34,8 +34,9 @@ void Window::createWindow(const char* title, int xPos, int yPos, int width, int 
         if (renderer) {
             Logger::initialize("Renderer");
             running = true;
+            SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "1" );
 
-            Logger::log("Started main window");
+            Logger::log("Started Window");
 
         } else {
             Logger::error("Failed to Initialize Renderer");
@@ -56,6 +57,7 @@ void Window::render() {
     SDL_RenderPresent(renderer);
 }
 
+/*
 void Window::setAttribute(Uint32 flag, bool enabled) {
     Uint32 windowFlags = SDL_GetWindowFlags(window);
     Uint32 availableFlags = SDL_WINDOW_FULLSCREEN;
@@ -81,6 +83,7 @@ void Window::setAttribute(Uint32 flag, bool enabled) {
         }
     }
 }
+ */
 
 Window::~Window() {
     SDL_DestroyWindow(window);

@@ -13,7 +13,7 @@ class Window {
     public:
         Window();
 
-        void createWindow(const char* title, int xPos, int yPos, int width, int height);
+        void createWindow(const char* title, int width, int height);
         void clear();
         void render();
 

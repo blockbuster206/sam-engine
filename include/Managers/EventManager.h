@@ -5,29 +5,50 @@
 #include "SDL.h"
 #include "vector"
 #include "iostream"
+#include "Window.h"
 
 #ifndef SAM_ENGINE_EVENTMANAGER_H
 #define SAM_ENGINE_EVENTMANAGER_H
 
 struct Event {
-
+    void (*func)();
+    std::string eventId;
 };
 
+static SDL_Event event;
 
 class EventManager {
     public:
-        static void doEvents();
-        //template<typename func> static void addCustomEvent();
+        void doEvents() {
+            while (SDL_PollEvent(&event)) {
+                switch (event.type) {
+                    case SDL_QUIT:
+                        Window::running = false;
+                        break;
+                }
+            }
+        }
 
-        // put events here for now
-;
+        void doCustomEvents() {
+            for(auto temp : customEvents) {
+                temp.func();
+            }
+        }
+
+
+        void addCustomEvent(std::string eventId, void (*func)()) {
+            Event customEvent;
+
+            customEvent.eventId = eventId;
+            customEvent.func = func;
+            customEvents.push_back(customEvent);
+        }
 
     private:
-        static SDL_Event event;
-        static std::vector<void> customEvents;
-
-
+        std::vector<Event> customEvents;
 };
+
+
 
 
 #endif //SAM_ENGINE_EVENTMANAGER_H

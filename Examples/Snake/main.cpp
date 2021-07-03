@@ -2,39 +2,28 @@
 #include "Window.h"
 #include "Managers/TextureManager.h"
 #include "Managers/EventManager.h"
+#include "Vector2/Float.h"
+#include "Logger.h"
 
-Window* window;
+Window* gameWindow;
 
 EventManager eventManager;
 
-void event() {
-    printf("hi");
-}
+Vector2f hello(50, 6);
 
 int main() {
-    window = new Window();
+    gameWindow = new Window();
 
-    window->createWindow("Snake", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 800);
-    Texture* lol = TextureManager::createTexture("assets/lol.png", 100, 100);
+    gameWindow->createWindow("Snake", 800, 800);
 
-    lol->transformDetails.x = 0;
-    lol->transformDetails.y = 0;
-
-    SDL_ShowCursor(0);
-    int x, y;
-
-    while (window->running) {
+    while (gameWindow->running) {
         eventManager.doEvents();
 
-        window->clear();
+        std::cout << hello.x << std::endl;
+        hello.add(Vector2f(1, 0));
 
-        SDL_GetMouseState(&x, &y);
-        lol->transformDetails.x = x - lol->transformDetails.w/2;
-        lol->transformDetails.y = y - lol->transformDetails.h/2;
-
-        TextureManager::drawTexture(lol);
-
-        window->render();
+        gameWindow->clear();
+        gameWindow->render();
     }
 
     return EXIT_SUCCESS;
