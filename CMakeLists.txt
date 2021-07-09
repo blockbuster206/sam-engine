@@ -1,11 +1,14 @@
 cmake_minimum_required(VERSION 3.19)
 project(SAM_ENGINE)
 
-project(Snake)
+project(Saminater)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake-modules)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Build)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Build)
+
+file(COPY ${CMAKE_CURRENT_LIST_DIR}/Examples/Snake/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/Build)
 
 set(SOURCES
         #Window Files
@@ -46,7 +49,7 @@ include_directories(${INCLUDE_DIRS})
 
 add_library(SAM_ENGINE SHARED ${SOURCES})
 
-add_executable(Snake Examples/Snake/main.cpp)
+add_executable(Saminater Examples/Snake/main.cpp)
 
 target_link_libraries(SAM_ENGINE ${LIBRARIES})
-target_link_libraries(Snake SAM_ENGINE)
+target_link_libraries(Saminater SAM_ENGINE)

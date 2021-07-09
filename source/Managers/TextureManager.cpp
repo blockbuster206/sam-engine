@@ -9,29 +9,27 @@
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 
-
 Texture* TextureManager::createTexture(const char* filepath, int w, int h) {
     Texture* texture = new Texture();
     SDL_Surface* tempSurface;
     tempSurface = IMG_Load(filepath);
-    if (tempSurface) {
-        texture->texture = SDL_CreateTextureFromSurface(Window::renderer, tempSurface);
-        SDL_FreeSurface(tempSurface);
-        if (texture->texture) {
-            Logger::texture(filepath);
-
-            texture->transformDetails = {0, 0, w, h};
-            return texture;
-        } else {
-            Logger::errorTexture(filepath);
-        }
-    } else {
+    if (tempSurface == 0) {
+        tempSurface = SDL_CreateRGBSurface(0, w, h, 32, 0, 0, 0, 0);
+        Uint32 color = SDL_MapRGBA(tempSurface->format, 255, 0, 255, 255);
+        SDL_FillRect(tempSurface, 0, color);
         Logger::errorTexture(filepath);
+    }
+    texture->texture = SDL_CreateTextureFromSurface(Window::renderer, tempSurface);
+    SDL_FreeSurface(tempSurface);
+    if (texture->texture) {
+        Logger::texture(filepath);
+        texture->transformDetails = {0, 0, w, h};
+        return texture;
     }
 }
 
 void TextureManager::drawTexture(Texture* texture) {
-    SDL_RenderCopyEx(Window::renderer, texture->texture, NULL, &texture->transformDetails, texture->angle, &texture->rotationPoint, SDL_FLIP_NONE);
+        SDL_RenderCopyEx(Window::renderer, texture->texture, NULL, &texture->transformDetails, texture->angle, &texture->rotationPoint, SDL_FLIP_NONE);
 }
 
 void TextureManager::setTexturePosition(Texture* texture, int x, int y) {

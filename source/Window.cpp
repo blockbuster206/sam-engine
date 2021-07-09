@@ -34,7 +34,7 @@ void Window::createWindow(const char* title, int width, int height) {
         if (renderer) {
             Logger::initialize("Renderer");
             running = true;
-            SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "2" );
+            SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "1" );
 
             Logger::log("Started Window");
 
