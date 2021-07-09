@@ -20,8 +20,7 @@ Texture* TextureManager::createTexture(const char* filepath, int w, int h) {
         if (texture->texture) {
             Logger::texture(filepath);
 
-            texture->transformDetails.w = w;
-            texture->transformDetails.h = h;
+            texture->transformDetails = {0, 0, w, h};
             return texture;
         } else {
             Logger::errorTexture(filepath);
@@ -32,5 +31,23 @@ Texture* TextureManager::createTexture(const char* filepath, int w, int h) {
 }
 
 void TextureManager::drawTexture(Texture* texture) {
-    SDL_RenderCopy(Window::renderer, texture->texture, NULL, &texture->transformDetails);
+    SDL_RenderCopyEx(Window::renderer, texture->texture, NULL, &texture->transformDetails, texture->angle, &texture->rotationPoint, SDL_FLIP_NONE);
+}
+
+void TextureManager::setTexturePosition(Texture* texture, int x, int y) {
+    texture->transformDetails.x = x;
+    texture->transformDetails.y = y;
+}
+
+void TextureManager::setTextureRotationPoint(Texture* texture, int xPos, int yPos) {
+    SDL_Point rotationPoint = {xPos, yPos};
+    texture->rotationPoint = rotationPoint;
+}
+
+void TextureManager::setTextureSize(Texture* texture, int width, int height) {
+    texture->transformDetails.w = width;
+    texture->transformDetails.h = height;
+}
+void TextureManager::rotateTexture(Texture* texture, double angle) {
+    texture->angle = angle;
 }

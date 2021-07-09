@@ -10,12 +10,19 @@
 struct Texture {
     SDL_Texture* texture;
     SDL_Rect transformDetails;
+    double angle;
+    SDL_Point rotationPoint;
 };
 
 class TextureManager {
     public:
         static Texture* createTexture(const char* filepath, int width, int height);
         static void drawTexture(Texture* texture);
+        static void setTexturePosition(Texture* texture, int x, int y);
+        static void setTextureRotationPoint(Texture* texture, int xPos, int yPos);
+        static void setTextureSize(Texture* texture, int width, int height);
+
+        static void rotateTexture(Texture* texture, double angle);
 };
 
 

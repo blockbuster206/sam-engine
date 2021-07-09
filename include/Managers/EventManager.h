@@ -2,7 +2,7 @@
 // Created by sam on 5/23/21.
 //
 
-#include "SDL.h"
+#include "SDL2/SDL.h"
 #include "vector"
 #include "iostream"
 #include "Window.h"
@@ -38,7 +38,6 @@ class EventManager {
 
         void addCustomEvent(std::string eventId, void (*func)()) {
             Event customEvent;
-
             customEvent.eventId = eventId;
             customEvent.func = func;
             customEvents.push_back(customEvent);

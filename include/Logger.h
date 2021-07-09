@@ -2,7 +2,7 @@
 // Created by sam on 5/22/21.
 //
 
-#include "SDL.h"
+#include "SDL2/SDL.h"
 
 #ifndef ALTERA_ENGINE_LOGGER_H
 #define ALTERA_ENGINE_LOGGER_H

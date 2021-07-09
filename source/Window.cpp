@@ -4,8 +4,8 @@
 
 #include "Window.h"
 #include "Logger.h"
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
+#include "SDL.h"
+#include "SDL_image.h"
 
 SDL_Renderer* Window::renderer = nullptr;
 bool Window::running;
@@ -34,7 +34,7 @@ void Window::createWindow(const char* title, int width, int height) {
         if (renderer) {
             Logger::initialize("Renderer");
             running = true;
-            SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "1" );
+            SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "2" );
 
             Logger::log("Started Window");
 

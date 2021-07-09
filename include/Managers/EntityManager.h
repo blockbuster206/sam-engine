@@ -1,15 +1,15 @@
 //
 // Created by sam on 3/7/21.
 //
-#include "Vector2/Float.h"
+
+#include "iostream"
+#include "vector"
+
 #ifndef SAM_ENGINE_ENTITYMANAGER_H
 #define SAM_ENGINE_ENTITYMANAGER_H
 
-class Entity {
-    public:
-
-
-};
+class Component;
+class Entity;
 
 class EntityManager {
 
