@@ -15,32 +15,7 @@ double amount;
 double cool;
 bool space_init;
 
-void up() {
-    if (event.key.type == SDL_KEYDOWN) {
-        if (!space_init) {
-            if (event.key.keysym.sym == SDLK_UP) {
-                amount += 0.1;
-            }
-
-            if (event.key.keysym.sym == SDLK_DOWN) {
-                amount -= 0.1;
-            }
-
-            if (event.key.keysym.sym == SDLK_LEFT) {
-                if (cool <= 0) {
-                    space_init = true;
-                    amount = 100;
-                } else if (cool >= 100) {
-                    space_init = true;
-                    amount = -100;
-                    if (cool >= 100000) {
-                        amount = -1000;
-                    }
-                }
-            }
-        }
-    }
-}
+void up();
 
 int main(int argc, char *argv[]) {
     gameWindow = new Window();
@@ -93,4 +68,31 @@ int main(int argc, char *argv[]) {
     }
 
     return EXIT_SUCCESS;
+}
+
+void up() {
+        if (event.key.type == SDL_KEYDOWN) {
+            if (!space_init) {
+                if (event.key.keysym.sym == SDLK_UP) {
+                    amount += 0.1;
+                }
+
+                if (event.key.keysym.sym == SDLK_DOWN) {
+                    amount -= 0.1;
+                }
+
+                if (event.key.keysym.sym == SDLK_LEFT) {
+                    if (cool <= 0) {
+                        space_init = true;
+                        amount = 100;
+                    } else if (cool >= 100) {
+                        space_init = true;
+                        amount = -100;
+                        if (cool >= 100000) {
+                            amount = -1000;
+                        }
+                    }
+                }
+            }
+        }
 }
