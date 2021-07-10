@@ -45,7 +45,7 @@ void up() {
 int main(int argc, char *argv[]) {
     gameWindow = new Window();
 
-    gameWindow->createWindow("Snake", 800, 800);
+    gameWindow->createWindow("Saminater", 800, 800);
 
     optical = TextureManager::createTexture("assets/images/suss.png", 1000, 1000);
     TextureManager::setTextureRotationPoint(optical, optical->transformDetails.w/2, optical->transformDetails.h/2);
@@ -68,7 +68,7 @@ int main(int argc, char *argv[]) {
             if (cool <= 10000) {
                 amount = -100;
                 if (cool <= 100 && cool >= 0) {
-                    TextureManager::setTextureSize(optical, 1250, 1250);
+                    TextureManager::setTextureSize(optical, 1000, 1000);
                     space_init = false;
                     cool = 0.2;
                     amount = 0;
@@ -85,7 +85,7 @@ int main(int argc, char *argv[]) {
 
         std::cout << "cool: " << cool << ", amount: " << amount << ", space_init: " << space_init << std::endl;
 
-        TextureManager::rotateTexture(optical, cool);
+        TextureManager::rotateTexture(optical,cool);
         TextureManager::drawTexture(optical);
 
 
