@@ -22,10 +22,9 @@ set(SOURCES
         #Vector Files
         source/Vector2/Float.cpp
         include/Vector2/Float.h
-        source/Vector2/Vector2i.cpp
-        include/Vector2/Vector2i.h
+        source/Vector2/Interger.cpp
+        include/Vector2/Interger.h
         #Entity Files
-        include/Managers/EntityManager.h
 
         source/Managers/TextureManager.cpp
         include/Managers/TextureManager.h
@@ -35,7 +34,7 @@ set(SOURCES
         include/Managers/GameManager.h
 
         source/Text.cpp
-        include/Text.h)
+        include/Text.h source/Managers/EventManager.cpp)
 
 #SDL2 Libraries
 find_package(SDL2 REQUIRED)

@@ -36,6 +36,10 @@ void Logger::errorAttribute(Uint32 flag) {
 }
 
 void Logger::error(const char* errorMessage) {
+    std::cout << "UH OH: " << errorMessage << "!" << std::endl;
+}
+
+void Logger::errorSDL(const char* errorMessage) {
     std::cout << "UH OH: " << errorMessage << "!" << SDL_GetError() << std::endl;
 }
 

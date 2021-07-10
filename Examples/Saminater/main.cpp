@@ -15,17 +15,17 @@ double amount;
 double cool;
 bool space_init;
 
-void up();
+void up(SDL_Event event);
 
 int main(int argc, char *argv[]) {
 
     gameWindow = Window::createWindow("Saminater", 800, 800);
 
-    optical = TextureManager::createTexture("assets/images/suss.png", 1000, 1000);
+    optical = TextureManager::createTexture("assets/images/ro.jpg", 1000, 1000);
     TextureManager::setTextureRotationPoint(optical, optical->transformDetails.w/2, optical->transformDetails.h/2);
     TextureManager::setTexturePosition(optical, 800/2-optical->transformDetails.w/2, 800/2-optical->transformDetails.h/2);
 
-    eventManager.addCustomEvent("hello", up);
+    eventManager.addCustomEvent(up);
 
     amount = 0;
     cool = 0;
@@ -55,13 +55,10 @@ int main(int argc, char *argv[]) {
             cool += amount;
 
         } else {
-            if (cool >= 360) {
-                cool = 0;
-            }
             cool += amount+0.1;
         }
 
-        std::cout << "cool: " << cool << ", amount: " << amount << ", space_init: " << space_init << std::endl;
+        //std::cout << "cool: " << cool << ", amount: " << amount << ", space_init: " << space_init << std::endl;
 
         TextureManager::rotateTexture(optical,cool);
         TextureManager::drawTexture(optical);
@@ -73,7 +70,7 @@ int main(int argc, char *argv[]) {
     return EXIT_SUCCESS;
 }
 
-void up() {
+void up(SDL_Event event) {
         if (event.key.type == SDL_KEYDOWN) {
             if (!space_init) {
                 if (event.key.keysym.sym == SDLK_UP) {

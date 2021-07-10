@@ -21,6 +21,7 @@ class Logger {
         static void errorAttribute(Uint32 flag);
 
         static void error(const char* errorMessage);
+        static void errorSDL(const char* errorMessage);
 };
 
 
