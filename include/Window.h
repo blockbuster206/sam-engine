@@ -11,9 +11,9 @@
 
 class Window {
     public:
-        Window();
+        Window(SDL_Window* window);
 
-        void createWindow(const char* title, int width, int height);
+        static Window* createWindow(const char* title, int width, int height);
         void clear();
         void render();
 

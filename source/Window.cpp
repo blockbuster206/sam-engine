@@ -10,7 +10,7 @@
 SDL_Renderer* Window::renderer = nullptr;
 bool Window::running;
 
-Window::Window() {
+Window::Window(SDL_Window* sdlWindow) {
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
         Logger::initialize("Subsystems");
         if (IMG_Init(IMG_INIT_PNG )) {
@@ -22,19 +22,23 @@ Window::Window() {
         Logger::error("Failed to Initialize Subsystems");
     }
     // initialize the variables so errors dont happen
-    window = nullptr;
+    window = sdlWindow;
 }
 
-void Window::createWindow(const char* title, int width, int height) {
-    window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, 0);
-    if (window) {
+Window* Window::createWindow(const char* title, int width, int height) {
+    SDL_Window* sdlWindow;
+    sdlWindow = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, 0);
+    if (sdlWindow) {
         Logger::initialize("Window");
 
-        renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);
+        renderer = SDL_CreateRenderer(sdlWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
         if (renderer) {
             Logger::initialize("Renderer");
             running = true;
             SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "1" );
+
+            Window* gameWindow = new Window(sdlWindow);
+            gameWindow->renderer = renderer;
 
             Logger::log("Started Window");
 

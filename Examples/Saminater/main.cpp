@@ -18,9 +18,8 @@ bool space_init;
 void up();
 
 int main(int argc, char *argv[]) {
-    gameWindow = new Window();
 
-    gameWindow->createWindow("Saminater", 800, 800);
+    gameWindow = Window::createWindow("Saminater", 800, 800);
 
     optical = TextureManager::createTexture("assets/images/suss.png", 1000, 1000);
     TextureManager::setTextureRotationPoint(optical, optical->transformDetails.w/2, optical->transformDetails.h/2);
@@ -37,6 +36,7 @@ int main(int argc, char *argv[]) {
         eventManager.doCustomEvents();
 
         gameWindow->clear();
+
 
         if (space_init) {
             TextureManager::setTextureSize(optical, 700, 700);
@@ -55,6 +55,9 @@ int main(int argc, char *argv[]) {
             cool += amount;
 
         } else {
+            if (cool >= 360) {
+                cool = 0;
+            }
             cool += amount+0.1;
         }
 
