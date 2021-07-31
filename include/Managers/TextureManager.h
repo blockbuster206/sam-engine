@@ -3,6 +3,7 @@
 //
 
 #include "SDL2/SDL.h"
+#include "vulkan/vulkan.hpp"
 
 #ifndef SAM_ENGINE_TEXTURE_H
 #define SAM_ENGINE_TEXTURE_H
