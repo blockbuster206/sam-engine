@@ -1,5 +1,5 @@
 # SAM-ENGINE
-a cool engine by sam
+a cool engine by blockbuster-exe
 
 # How to build SAM-ENGINE
 ### Make sure you have the following:

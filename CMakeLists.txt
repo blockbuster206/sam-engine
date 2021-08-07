@@ -5,7 +5,6 @@ project(Saminater)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake-modules)
-set(CMAKE_EXE_LINKER_FLAGS)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Build)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Build)
 
@@ -25,7 +24,6 @@ set(SOURCES
         source/Vector2/Interger.cpp
         include/Vector2/Interger.h
         #Entity Files
-
         source/Managers/TextureManager.cpp
         include/Managers/TextureManager.h
 
@@ -57,4 +55,5 @@ add_library(SAM_ENGINE SHARED ${SOURCES})
 add_executable(Saminater Examples/Saminater/main.cpp)
 
 target_link_libraries(SAM_ENGINE ${LIBRARIES})
-target_link_libraries(Saminater SAM_ENGINE -static-libgcc -static-libstdc++)
+
+target_link_libraries(Saminater SAM_ENGINE)
