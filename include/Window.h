@@ -8,7 +8,6 @@
 
 
 
-
 class Window {
     public:
         Window(SDL_Window* window);

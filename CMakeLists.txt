@@ -56,5 +56,5 @@ add_library(SAM_ENGINE SHARED ${SOURCES})
 
 add_executable(Saminater Examples/Saminater/main.cpp)
 
-target_link_libraries(SAM_ENGINE ${LIBRARIES} -static-libstdc++)
-target_link_libraries(Saminater SAM_ENGINE -static-libgcc)
+target_link_libraries(SAM_ENGINE ${LIBRARIES})
+target_link_libraries(Saminater SAM_ENGINE -static-libgcc -static-libstdc++)
